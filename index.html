@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="837501832762-822hmdjlj431f8ib5shn7i8im649baom.apps.googleusercontent.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    
+
+    <div class="container">
+        <h2 class="heading">Signin with Google Using javascript</h2>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    </div>
+
+    <div class="main">
+        <img id="image" src="" alt="">
+        <p class="profile-pic">profile pic</p>
+        <p class="name">name</p>
+        <p id="name"></p>
+        <p class="email">Email</p>
+        <p id="email"></p>
+
+        <button type="button" class="btn" onclick="signOut();">Sign out</button>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </body>
 </html>
